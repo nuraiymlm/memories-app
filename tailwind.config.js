@@ -24,8 +24,8 @@ export default {
       colors: {
         rosewater: "#f8e8ed",
         blush: "#f5d0da",
-        lavender: "#e9e2ff",
-        aurora: "#cfe8ff",
+       lavender: "#734f96",
+        aurora: "#3d5f8f",
         peach: "#ffe5d4",
         midnight: "#0b1020",
         stardust: "#1b1f3b",
