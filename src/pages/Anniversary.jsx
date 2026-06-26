@@ -166,9 +166,9 @@ export default function Anniversary() {
               <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-rose-100">
                 <Gift className="h-8 w-8 text-rose-500" />
               </div>
-              <h1 className="font-display text-3xl">Open Your Anniversary Gift</h1>
+              <h1 className="font-display text-3xl">Open Your Gift</h1>
               <p className="mt-3 text-slate-600">
-                A soft, cinematic memory created just for you.
+               w/love.
               </p>
               <button
                 className="mt-6 rounded-full bg-rose-500 px-8 py-3 text-white shadow-glow"
@@ -196,7 +196,7 @@ export default function Anniversary() {
               {config.creatorName} & {config.partnerName}
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
-              A living memory crafted from the moments that made us.
+             crafted from the moments that made us.
             </p>
           </motion.div>
 
@@ -321,17 +321,17 @@ export default function Anniversary() {
           >
             <div className="flex items-center gap-3 text-rose-500">
               <Heart className="h-5 w-5" />
-              <h2 className="font-display text-2xl">Tiny Rituals</h2>
+              <h2 className="font-display text-2xl">mini message</h2>
             </div>
             <p className="mt-4 text-slate-600">
-              Tap the heart to unlock a secret whisper.
+              Tap the heart to unlock.
             </p>
             <button
               className="mt-6 flex items-center gap-2 rounded-full bg-rose-500 px-4 py-2 text-white"
               onDoubleClick={() => setSecretOpen((prev) => !prev)}
               onClick={() => setClickCount((prev) => prev + 1)}
             >
-              <Heart className="h-4 w-4" /> Double click me
+              <Heart className="h-4 w-4" /> Double click
             </button>
             <AnimatePresence>
               {secretOpen && (
@@ -341,7 +341,7 @@ export default function Anniversary() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
                 >
-                  You are my favorite forever. 💖
+                   ty moya lyubov💖
                 </motion.div>
               )}
             </AnimatePresence>
@@ -353,7 +353,7 @@ export default function Anniversary() {
         <motion.div variants={shimmerVariants} initial="hidden" whileInView="visible">
           <div className="flex items-center gap-3 text-rose-500">
             <Sparkles className="h-5 w-5" />
-            <h2 className="font-display text-3xl">Memory Gallery</h2>
+            <h2 className="font-display text-3xl">Gallery</h2>
           </div>
           <p className="mt-3 text-slate-600">
             Drag the polaroids. Long press to hear a hidden note.
@@ -412,10 +412,10 @@ export default function Anniversary() {
         <div className="mx-auto max-w-6xl">
           <div className="flex items-center gap-3 text-rose-200">
             <Star className="h-5 w-5" />
-            <h2 className="font-display text-3xl">Night Sky Promise</h2>
+            <h2 className="font-display text-3xl">Promise</h2>
           </div>
           <p className="mt-3 text-slate-200">
-            Each star holds a promise. Tap to reveal.
+            Each star holds something..
           </p>
           <div className="relative mt-10 h-[320px] rounded-[32px] bg-stardust/60 p-6">
             {skyStars.map((star) => (
@@ -464,21 +464,21 @@ export default function Anniversary() {
       <section ref={surpriseRef} className="mx-auto max-w-5xl px-6 py-16 sm:px-10">
         <div className="flex items-center gap-3 text-rose-500">
           <Wand2 className="h-5 w-5" />
-          <h2 className="font-display text-3xl">Surprise</h2>
+          <h2 className="font-display text-3xl">something</h2>
         </div>
         <div className="mt-6 rounded-[32px] bg-white/80 p-8 shadow-glass">
           {!surpriseUnlocked ? (
             <div className="flex flex-col items-center gap-4 text-center text-slate-600">
               <Lock className="h-6 w-6 text-rose-400" />
-              <p>Keep going... the surprise unlocks with {config.surprise.unlock}.</p>
+              <p>Keep going... {config.surprise.unlock}.</p>
             </div>
           ) : (
             <div className="text-center">
               <p className="text-xl font-semibold text-rose-500">
-                You are my always and my forever.
+                i love you zhanym
               </p>
               <p className="mt-3 text-slate-600">
-                Thank you for making love feel this gentle.
+               spasiba vam chto razdelyaete zhizn' so mnoiii vmesteee
               </p>
               <div className="mt-4 flex justify-center gap-2 text-2xl">
                 <span className="heart-pop">❤️</span>
@@ -493,7 +493,7 @@ export default function Anniversary() {
       <section className="mx-auto max-w-6xl px-6 py-16 sm:px-10">
         <div className="flex items-center gap-3 text-rose-500">
           <Sparkles className="h-5 w-5" />
-          <h2 className="font-display text-3xl">Our Future</h2>
+          <h2 className="font-display text-3xl"> future</h2>
         </div>
         <div className="mt-6 grid gap-6 md:grid-cols-3">
           {config.futureCards.map((card, index) => (
@@ -511,7 +511,7 @@ export default function Anniversary() {
       </section>
 
       <footer className="px-6 py-10 text-center text-sm text-slate-500 sm:px-10">
-        Crafted By Navaneeth. ❤
+        crafted by nuraiym ❤
       </footer>
     </div>
   );
